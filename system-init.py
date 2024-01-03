@@ -46,7 +46,7 @@ def install_packages(category, packages):
 def clone_and_copy_repo():
     """Clone a GitHub repository and copy its contents to the home directory interactively."""
     print("Cloning GitHub repository...")
-    run_command("git clone https://github.com/insidesources/archlinux.git")
+    run_command("git clone https://gitlab.com/insidesources/archlinux.git")
     os.chdir("archlinux")
     print("Copying files to the home directory...")
     run_command_interactive("sudo cp -ri . ~/")
