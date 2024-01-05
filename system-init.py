@@ -46,8 +46,7 @@ def clone_and_copy_repo():
     run_command_interactive("sudo cp -ri . ~/")
     
 def change_default_shell():
-    """Change the default shell to Zsh."""
-    print("Changing the default shell to Zsh...")
+    print("changing the default shell to ZSH")
     run_command_interactive("chsh -s /usr/bin/zsh")
 
 def main():
