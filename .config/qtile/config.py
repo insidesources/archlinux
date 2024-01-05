@@ -162,8 +162,8 @@ keys = [
 groups = []
 group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9","0",]
 
-group_labels = ["1 - term", "2 - web", "3 - systems", "4 - obsidian", "5 - code", "6 - games", "7 - misc", "8 - vm", "9 - hacking", "0 - admin",]
-#group_labels = ["1", "2", "3", "4", "5", "6", "7", "8", "9",]
+group_labels = [" term", " web", " systems", " obsidian", " code", " games", " misc", " vm", " hacking", " admin",]
+#group_labels = ["1 - term", "2 - web", "3 - systems", "4 - obsidian", "5 - code", "6 - games", "7 - misc", "8 - hacking", "9 - admin",]
 
 group_layouts = ["monadtall", "max", "monadtall", "monadtall", "monadtall", "max", "monadtall", "monadtall", "monadtall", "monahtall",]
 
@@ -438,7 +438,7 @@ def init_widgets_list():
         widget.Spacer(length = 4),
         widget.TextBox(
                 #widget22
-                text="power menu",
+                text=" power",
                 foreground = colors[6],
                 mouse_callbacks={'Button1': lambda: qtile.cmd_spawn('rofi -show power-menu -modi power-menu:rofi-power-menu')},
                 decorations=[
