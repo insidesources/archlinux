@@ -11,5 +11,8 @@ require("neo-tree").setup({
 			enabled = true,
 		},
 		hijack_netrw_behavior = "open_current",
+		filtered_items = {
+				hide_dotfiles = false			
+			},
 	},
 })
