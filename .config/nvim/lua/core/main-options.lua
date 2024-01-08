@@ -6,7 +6,7 @@ vim_opts({
 		number = true,
 		signcolumn = "yes",
 		numberwidth = 6,
-		colorcolumn = "100",
+		--colorcolumn = "100",
 		guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20",
 		cursorline = true,
 		cursorlineopt = "number",
