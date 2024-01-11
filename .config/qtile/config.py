@@ -222,7 +222,7 @@ colors = colors.Nord
 # from having to type these out for each individual layout.
 layout_theme = {"border_width": 2,
                 "margin": 1,
-                "border_focus": colors[9],
+                "border_focus": colors[16],
                 "border_normal": colors[0]
                 }
 
