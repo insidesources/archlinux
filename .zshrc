@@ -106,6 +106,4 @@ alias remove="yay -R"
 alias search="yay -Ss"
 alias pc="proxychains"
 alias scr="cd ~/pictures && scrot -s -f -d 3 --format png"
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/home/hacker/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+alias nv="nvim"
