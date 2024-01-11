@@ -22,7 +22,7 @@ white = "#ECF0F1"
 yellow = "#FFEE58"
 
 [colors.primary]
-background = "#2E3440"
+background = "#272b35"
 foreground = "#D8DEE9"
 
 [env]
@@ -150,3 +150,7 @@ instance = "alacritty"
 [window.padding]
 x = 0
 y = 0
+
+[cursor]
+style = "underline"
+unfocused_hollow = "false"
