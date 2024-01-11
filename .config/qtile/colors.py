@@ -50,7 +50,7 @@ MonokaiPro = [
     ]
 
 Nord = [
-    ["#2E3440", "#2E3440"], # bg
+    ["#272b35", "#272b35"], # bg
     ["#D8DEE9", "#D8DEE9"], # fg
     ["#3B4252", "#3B4252"], # color02 dark gray
     ["#DC143C", "#DC143c"], # color03 red
