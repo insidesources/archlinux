@@ -165,7 +165,7 @@ group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9","0",]
 group_labels = [" term", " web", " systems", " obsidian", " code", " games", " misc", " vm", " hacking", " admin",]
 #group_labels = ["1 - term", "2 - web", "3 - systems", "4 - obsidian", "5 - code", "6 - games", "7 - misc", "8 - hacking", "9 - admin",]
 
-group_layouts = ["monadtall", "max", "monadtall", "monadtall", "monadtall", "max", "monadtall", "monadtall", "monadtall", "monahtall",]
+group_layouts = ["monadtall", "max", "monadtall", "monadtall", "monadtall", "max", "monadtall", "monadtall", "monadtall", "monadtall",]
 
 
 for i in range(len(group_names)):
