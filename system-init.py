@@ -34,7 +34,7 @@ def install_packages(category, packages):
     if response.startswith('y'):
         for package in packages:
             print(f"installing {package}...")
-            run_command(f"yay -S {package}")
+            run_command_interactive(f"yay -S {package}")
     elif response.startswith('n'):
         print(f"skipping installation of {category} packages")
             
