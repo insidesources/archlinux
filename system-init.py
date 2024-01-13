@@ -63,7 +63,7 @@ def main():
                         "qflipper", "qtile-extras", "qutebrowser", "rofi", "rofi-power-menu-git", "rpi-imager", "scrot", "solaar", "spicetify-cli", "spotify",
                         "streamdeck-ui", "tailscale", "teamviewer", "telegram-desktop", "termius", "thunderbird", "tmux", "tor", "torbrowser-launcher", "tradingview",
                         "unicode-character-database", "unicode-emoji", "visual-studio-code-bin", "vlc", "vmware-workstation", "weechat", "xorg-xrandr", "xreader", "zerotier-one", "zoom",
-                        "zsh", "man"]
+                        "zsh", "man", "bibata-cursor-theme-bin"]
         
         cybersecurity_tools = ["dnsrecon", "exploitdb", "hydra", "metasploit", "ngrok", "nmap", "phonesploit", "punter", "recon-ng", "set",
                         "sublist3r", "thefatrat", "theharvester", "wireshark-qt", "wpscan"]
