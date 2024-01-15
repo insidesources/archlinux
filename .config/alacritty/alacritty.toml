@@ -153,4 +153,4 @@ y = 0
 
 [cursor]
 style = "underline"
-unfocused_hollow = "false"
+unfocused_hollow = false
