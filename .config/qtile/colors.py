@@ -61,7 +61,7 @@ Nord = [
     ["#88C0D0", "#88C0D0"], # color08
     ["#26a269", "#26a269"], # color09 green
     ["#525f7f", "#525f7f"], # color10 grayish blue
-	["#1976d2", "#1976d2"], # color11 blue
+    ["#1976d2", "#1976d2"], # color11 blue
     ["#ff8c00", "#ff8c00"], # color12 dark orange
     ["#FFEE58", "#FFEE58"], # color13 yellow
     ["#282c34ee", "#282c34dd"], # color14 - transparent
