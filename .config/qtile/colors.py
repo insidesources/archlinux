@@ -66,7 +66,7 @@ Nord = [
     ["#FFEE58", "#FFEE58"], # color13 yellow
     ["#282c34ee", "#282c34dd"], # color14 - transparent
     ["#0097A7", "#0097A7"], # color 15 - cyan
-    ["#272b35", "#272b35"] # color 16 - dark slate blue 
+    ["#206694", "#206694"] # color 16 - dark slate blue 
     ]
 
 OceanicNext = [
