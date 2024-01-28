@@ -1,0 +1,222 @@
+:root {
+
+    --dark0_x:  46,52,64; /* #2e3440 */
+    --dark0:    rgb(var(--dark0_x));
+    --dark1_x:  59,66,82; /* #3b4252 */
+    --dark1:    rgb(var(--dark1_x));
+    --dark2_x:  67,76,94; /* #434c5e */
+    --dark2:    rgb(var(--dark2_x));
+    --dark3_x:  76,86,106; /* #4c566a */
+    --dark3:    rgb(var(--dark3_x));
+	--dark4_x:  39,43,53; /* #272b35 */
+    --dark4:    rgb(var(--dark4_x));
+
+    --light0_x: 216,222,233; /* #d8dee9 */
+    --light0:   rgb(var(--light0_x));
+    --light1_x: 229,233,240; /* #e5e9f0 */
+    --light1:   rgb(var(--light1_x));
+    --light2_x: 236,239,244; /* #eceff4 */
+    --light2:   rgb(var(--light2_x));
+    --light3_x: 255,255,255; /* #ffffff */
+    --light3:   rgb(var(--light3_x));
+
+	--frost2_x: 129,161,193; /* #81a1c1 */
+    --frost2:   rgb(var(--frost2_x));
+    --frost3_x: 94,129,172; /* #5e81ac */
+    --frost3:   rgb(var(--frost3_x));
+
+	--red_x:    191,97,106; /* #bf616a */
+    --red:      rgb(var(--red_x));
+    --orange_x: 255,140,0; /* #ff8c00 */
+    --orange:   rgb(var(--orange_x));
+    --yellow_x: 255,238,88; /* #ffee58 */
+    --yellow:   rgb(var(--yellow_x));
+    --green_x:  38,162,105; /* #26a269 */
+    --green:    rgb(var(--green_x));
+    --purple_x: 147,112,219; /* #9370DB */
+    --purple:   rgb(var(--purple_x));
+	--blue_x:   32,102,148; /* #206694 */
+    --blue:     rgb(var(--blue_x));
+}
+
+body {
+	--font-text-theme: Source Code Pro, monospace;
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
+	--tag-decoration:                 none;
+    --tag-decoration-hover:           underline;
+	--tag-padding-x: 2px;
+	--tag-padding-y: 2px;
+	--tag-radius: 0px;
+}
+
+.theme-dark {
+
+	--color-red-rgb:                 var(--red_x);
+	--color-red:                     var(--red);
+	--color-purple-rgb:              var(--purple_x);
+	--color-purple:                  var(--purple);
+	--color-green-rgb:               var(--green_x);
+	--color-green:                   var(--green);
+	--color-cyan-rgb:                var(--frost1_x);
+	--color-cyan:                    var(--frost1);
+	--color-blue-rgb:                var(--blue_x);
+	--color-blue:                    var(--blue);
+	--color-yellow-rgb:              var(--yellow_x);
+	--color-yellow:                  var(--yellow);
+	--color-orange-rgb:              var(--orange_x);
+	--color-orange:                  var(--orange);
+	
+	--background-primary:            var(--dark4);
+	--background-primary-alt:        var(--dark1);
+	--background-secondary:          var(--dark4);
+	--background-secondary-alt:      var(--dark4);
+	--background-modifier-border:    var(--dark2);
+	
+	--cursor-line-background:        rgba(var(--red_x), 0.2);
+	
+	--text-normal:                   var(--light2);
+	--text-faint:                    var(--light0);
+	--text-muted:                    var(--light1);
+	
+	--link-url:                      var(--blue);
+	
+	--h1-color:                      var(--green);
+	--h2-color:                      var(--blue);
+	--h3-color:                      var(--green);
+	--h4-color:                      var(--purple);
+	--h5-color:                      var(--green);
+	--h6-color:                      var(--blue);
+	
+	--text-highlight-bg:             var(--frost1);
+	--text-highlight-fg:             var(--dark0);
+	
+	--text-accent:                   var(--blue);
+	--text-accent-hover:             var(--orange);
+	
+	--tag-color:                     var(--frost0);
+	--tag-background:                var(--dark2);
+	--tag-background-hover:          var(--dark1);
+	
+	--titlebar-text-color-focused:   var(--light0);
+	
+	--inline-title-color:            var(--light2);
+	
+	--bold-color:                    var(--light2);
+	--italic-color:                  var(--light2);
+	
+	--checkbox-color:                var(--frost1);
+	--checkbox-color-hover:          var(--frost2);
+	--checkbox-border-color:         var(--frost1);
+	--checkbox-border-color-hover:   var(--frost2);
+	--checklist-done-color:          rgba(var(--light2_x), 0.5);
+	
+	--table-header-background:       hsl(220, 16%, 16%);
+	--table-header-background-hover: var(--dark3);
+	--table-row-even-background:     hsl(220, 16%, 20%);
+	--table-row-odd-background:      hsl(220, 16%, 24%);
+	--table-row-background-hover:    var(--dark3);
+	
+	--text-selection:                rgba(var(--purple_x), 0.6);
+	--flashing-background:           rgba(var(--orange_x), 0.3);
+	
+	--code-normal:                   var(--frost1);
+	--code-background:               var(--dark0);
+	
+	--mermaid-note:                  var(--frost3);
+	--mermaid-loopline:              var(--frost1);
+	--mermaid-exclude:               var(--dark3);
+	--mermaid-seqnum:                var(--dark0);
+	
+	--icon-color-hover:              var(--green);
+	--icon-color-focused:            var(--frost2);
+	
+	--nav-item-color-hover:          var(--yellow);
+	--nav-item-color-active:         var(--frost2);
+	--nav-file-tag:                  rgba(var(--yellow_x), 0.9);
+	
+	--graph-line:                    var(--dark3);
+	--graph-node:                    var(--light3);
+	--graph-node-tag:                var(--red);
+	--graph-node-attachment:         var(--green);
+	
+	--calendar-hover:                var(--red);
+	--calendar-background-hover:     var(--dark3);
+	--calendar-week:                 var(--yellow);
+	--calendar-today:                var(--yellow);
+	
+	--dataview-key:                  var(--text-faint);
+	--dataview-key-background:       rgba(var(--frost2_x), 0.3);
+	--dataview-value:                var(--text-faint);
+	--dataview-value-background:     rgba(var(--red_x), 0.3);
+	
+	--tab-text-color-focused-active:         var(--green);
+	--tab-text-color-focused-active-current: var(--green);
+
+	--interactive-normal: var(--frost0);
+	--interactive-hover: var(--dark3);
+	--interactive-accent-hover: var(--frost1);
+	
+
+	--background-modifier-form-field: var(--frost0);
+	--background-modifier-form-field-highlighted: var(--frost1);
+	--background-modifier-box-shadow: var(--frost0);
+
+	--background-modifier-border-hover: var(--interactive-hover);
+	--background-modifier-border-focus: var(--dark1);
+
+  }
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+	background-color: var(--dark0);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.search-input-container input:hover,
+.search-input-container input:focus {
+	background-color:var(--frost0);
+	border-color: var(--frost0);
+  }
+
+input[type=checkbox]
+{
+    border: 1px solid var(--checkbox-color);
+	box-shadow: inset 0 0 0 1px var(--frost2);
+}
+
+input[type=checkbox]:checked
+{
+    background-color: var(--green);
+    box-shadow: inset 0 0 0 1px var(--frost2);
+}
+
+input[type=checkbox]:checked:after
+{
+    display: none;
+}
