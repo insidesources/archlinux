@@ -11,9 +11,9 @@
 #autostart applications
 lxappearance &
 picom &
-noisetorch &
+#noisetorch &
 streamdeck &
-protonmail-bridge &
+#protonmail-bridge &
 
 ### UNCOMMENT ONLY ONE OF THE FOLLOWING THREE OPTIONS! ###
 # 1. Uncomment to restore last saved wallpaper
