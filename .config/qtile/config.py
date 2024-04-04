@@ -112,15 +112,20 @@ keys = [
     Key([mod, "control"], "Down", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "Up", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
-    Key([mod], "m", lazy.layout.maximize(), desc='Toggle between min and max sizes'),
+    #Key([mod], "m", lazy.layout.maximize(), desc='Toggle between min and max sizes'),
     Key([mod], "t", lazy.window.toggle_floating(), desc='toggle floating'),
     Key([mod], "f", lazy.window.toggle_fullscreen(), desc='toggle fullscreen'),
-    Key([mod, "shift"], "m", minimize_all(), desc="Toggle hide/show all windows on current group"),
+    #Key([mod, "shift"], "m", minimize_all(), desc="Toggle hide/show all windows on current group"),
 
     # Switch focus of monitors
     Key([mod], "period", lazy.next_screen(), desc='Move focus to next monitor'),
     Key([mod], "comma", lazy.prev_screen(), desc='Move focus to prev monitor'),
     
+    # Sound
+    Key([mod], "m", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"), desc="XF86AudioMute mutes or unmutes the audio"),
+    Key([mod], "j", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -2%"), desc="XF86AudioLowerVolume lowers the audio"),
+    Key([mod], "k", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +2%"), desc="XF86AudioRaiseVolume raises the audio")
+
     # Emacs programs launched using the key chord CTRL+e followed by 'key'
     #KeyChord([mod],"e", [
     #    Key([], "e", lazy.spawn(myEmacs), desc='Emacs Dashboard'),
