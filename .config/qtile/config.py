@@ -19,8 +19,9 @@ import colors
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
-myBrowser = "firefox"     # My browser of choice
+myBrowser = "brave"     # My browser of choice
 myMenu = "rofi -show run" # Shows rofi
+myObsidian = "obsidian" # launches obsidian
 
 # Allows you to input a name when adding treetab section.
 @lazy.layout.function
@@ -42,6 +43,7 @@ keys = [
     Key([mod], "Return", lazy.spawn(myTerm), desc="Terminal"),
     Key([mod, "shift"], "Return", lazy.spawn("dm-run"), desc='Run Launcher'),
     Key([mod], "b", lazy.spawn(myBrowser), desc='Web browser'),
+    Key([mod], "o", lazy.spawn(myObsidian), desc='Obsidian'),
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "c", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
