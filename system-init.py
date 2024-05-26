@@ -58,18 +58,18 @@ def main():
         #package lists
         core_packages = ["linux-zen-headers", "feh", "firefox", "bitwarden", "alacritty", "kvantum", "qt5ct", "qt6ct", "ttf-nerd-fonts-symbols-mono",
                         "noto-fonts-emoji", "arc-gtk-theme", "arc-icon-theme", "discord", "betterdiscord-installer-bin", "brave-bin", "debtap", "dunst", "easyeffects",
-                        "glances", "mc", "google-chrome", "gotop", "ledger-live-bin", "lxappearance", "lynx", "mysql-workbench", "neofetch",
-                        "neovim", "nitrogen", "noisetorch", "notepadqq", "notion-app-enhanced", "nvidia-settings", "nvtop", "obs-studio-browser", "obsidian", "onlyoffice-bin",
-                        "openrgb", "openvpn", "pavucontrol", "picom", "postman-bin", "powershell-bin", "protonmail-bridge-bin", "protonvpn", "proxychains-ng", "qbittorrent",
+                        "glances", "mc", "gotop", "ledger-live-bin", "lxappearance", "lynx", "mysql-workbench", "neofetch",
+                        "neovim", "nitrogen", "notepadqq", "nvidia-settings", "nvtop", "obs-studio-browser", "obsidian", "onlyoffice-bin",
+                        "openrgb", "openvpn", "pavucontrol", "picom", "postman-bin", "powershell-bin", "protonvpn", "proxychains-ng", "qbittorrent",
                         "qflipper", "qtile-extras", "qutebrowser", "rofi", "rofi-power-menu-git", "rpi-imager", "scrot", "solaar", "spicetify-cli", "spotify",
-                        "streamdeck-ui", "tailscale", "teamviewer", "telegram-desktop", "termius", "thunderbird", "tmux", "tor", "torbrowser-launcher", "tradingview",
-                        "unicode-character-database", "unicode-emoji", "visual-studio-code-bin", "vlc", "vmware-workstation", "weechat", "xorg-xrandr", "xreader", "zerotier-one", "zoom",
-                        "zsh", "man", "bibata-cursor-theme-bin", "alsa-utils", "lightdm-gtk-greeter-settings", "doublecmd-gtk2", "calcurse", "gparted"]
+                        "streamdeck-ui", "teamviewer", "telegram-desktop", "termius", "tmux", "tor", "torbrowser-launcher", "tradingview",
+                        "unicode-character-database", "unicode-emoji", "vlc", "vmware-workstation", "weechat", "xorg-xrandr", "xreader", "zerotier-one", "zsh", "man", 
+                        "bibata-cursor-theme-bin", "alsa-utils", "lightdm-gtk-greeter-settings", "calcurse", "gparted"]
         
         cybersecurity_tools = ["dnsrecon", "exploitdb", "hydra", "metasploit", "ngrok", "nmap", "phonesploit", "punter", "recon-ng", "set",
                         "sublist3r", "thefatrat", "theharvester", "wireshark-qt", "wpscan"]
         
-        games = ["steam", "lutris", "curseforge", "strongbox", "proton-ge-custom-bin"]
+        games = ["steam", "lutris", "curseforge", "proton-ge-custom-bin", "protontricks"]
 
         install_packages("core packages", core_packages)
         install_packages("cybersecurity tools", cybersecurity_tools)
