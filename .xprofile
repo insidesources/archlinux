@@ -1,2 +1,3 @@
+export GTK_THEME="Arc-Dark"
 export QT_QPA_PLATFORMTHEME="qt5ct"
-export QT_STYLE_OVERRIDE="gtk3"
+#export QT_STYLE_OVERRIDE="gtk3"
