@@ -388,7 +388,7 @@ def init_widgets_list():
         widget.DF(
                  update_interval = 60,
                  foreground = colors[1],
-                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e glances --fahrenheit')},
+                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e mc /')},
                  partition = '/',
                  #format = '[{p}] {uf}{m} ({r:.0f}%)',
                  format = '{uf}{m}',
@@ -405,7 +405,7 @@ def init_widgets_list():
                 widget.DF(
                  update_interval = 60,
                  foreground = colors[1],
-                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e glances --fahrenheit')},
+                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e mc /secondary')},
                  partition = '/secondary',
                  #format = '[{p}] {uf}{m} ({r:.0f}%)',
                  format = '{uf}{m}',
