@@ -69,7 +69,7 @@ def main():
         cybersecurity_tools = ["dnsrecon", "exploitdb", "hydra", "metasploit", "ngrok", "nmap", "phonesploit", "punter", "recon-ng", "set",
                         "sublist3r", "thefatrat", "theharvester", "wireshark-qt", "wpscan"]
         
-        games = ["steam", "lutris", "curseforge", "proton-ge-custom-bin", "protontricks"]
+        games = ["steam", "lutris", "proton-ge-custom-bin", "protontricks"]
 
         install_packages("core packages", core_packages)
         install_packages("cybersecurity tools", cybersecurity_tools)
