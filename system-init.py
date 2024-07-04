@@ -64,7 +64,7 @@ def main():
                         "qflipper", "qtile-extras", "qutebrowser", "rofi", "rofi-power-menu-git", "rpi-imager", "scrot", "solaar", "spicetify-cli", "spotify",
                         "streamdeck-ui", "teamviewer", "telegram-desktop", "termius", "tmux", "tor", "torbrowser-launcher", "tradingview",
                         "unicode-character-database", "unicode-emoji", "vlc", "vmware-workstation", "weechat", "xorg-xrandr", "xreader", "zerotier-one", "zsh", "man", 
-                        "bibata-cursor-theme-bin", "alsa-utils", "lightdm-gtk-greeter-settings", "calcurse", "gparted", "ollama", "docker", "docker-compose"]
+                        "bibata-cursor-theme-bin", "alsa-utils", "lightdm-gtk-greeter-settings", "calcurse", "gparted", "ollama-cuda", "cuda", "cuda-tools", "docker", "docker-compose"]
         
         cybersecurity_tools = ["dnsrecon", "exploitdb", "hydra", "metasploit", "ngrok", "nmap", "phonesploit", "punter", "recon-ng", "set",
                         "sublist3r", "thefatrat", "theharvester", "wireshark-qt", "wpscan"]
