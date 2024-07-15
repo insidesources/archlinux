@@ -56,7 +56,7 @@ def main():
         install_blackarch()
 
         #package lists
-        core_packages = ["linux-zen-headers", "feh", "firefox", "bitwarden", "alacritty", "kvantum", "qt5ct", "qt6ct", "ttf-nerd-fonts-symbols-mono",
+        core_packages = ["linux-zen-headers", "feh", "firefox", "bitwarden", "alacritty", "kvantum", "kvantum-qt5", "qt5ct", "qt6ct", "ttf-nerd-fonts-symbols-mono",
                         "noto-fonts-emoji", "arc-gtk-theme", "arc-icon-theme", "discord", "betterdiscord-installer-bin", "brave-bin", "debtap", "dunst", "easyeffects",
                         "glances", "mc", "gotop", "ledger-live-bin", "lxappearance", "lynx", "mysql-workbench", "fastfetch",
                         "neovim", "nitrogen", "notepadqq", "nvidia-settings", "nvtop", "obs-studio-browser", "obsidian", "onlyoffice-bin",
