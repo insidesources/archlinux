@@ -58,7 +58,7 @@ def main():
         #package lists
         core_packages = ["linux-zen-headers", "feh", "firefox", "bitwarden", "alacritty", "kvantum", "kvantum-qt5", "qt5ct", "qt6ct", "ttf-nerd-fonts-symbols-mono",
                         "noto-fonts-emoji", "arc-gtk-theme", "arc-icon-theme", "discord", "betterdiscord-installer-bin", "brave-bin", "debtap", "dunst", "easyeffects", "gimp", 
-                        "glances", "mc", "gotop", "ledger-live-bin", "lxappearance", "lynx", "mysql-workbench", "fastfetch",
+                        "glances", "mc", "gotop", "ledger-live-bin", "lxappearance", "lynx", "mysql-workbench", "fastfetch", "filezilla",
                         "neovim", "nitrogen", "notepadqq", "nvidia-settings", "nvtop", "obs-studio-browser", "obsidian", "onlyoffice-bin",
                         "openrgb", "openvpn", "pavucontrol", "picom", "postman-bin", "powershell-bin", "protonvpn", "proxychains-ng", "qbittorrent",
                         "qflipper", "qtile-extras", "qutebrowser", "rofi", "rofi-power-menu-git", "rpi-imager", "scrot", "solaar", "spicetify-cli", "spotify",
