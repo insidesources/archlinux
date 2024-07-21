@@ -40,7 +40,7 @@ def install_packages(category, packages):
         print(f"skipping installation of {category} packages")
             
 def clone_and_copy_repo():
-    print("cloning your gitlab repository...")
+    print("cloning your git repository...")
     run_command("git clone https://github.com/insidesources/archlinux.git")
     os.chdir("archlinux")
     print("copying files to the home directory")
