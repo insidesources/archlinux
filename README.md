@@ -22,13 +22,14 @@ Memory: 64GiB
 In this you can find my system-init python script to run after you do a fresh install, to install core packages and do some system configuration!
 
 Some other configs you might find useful:
-1. Alacritty
-2. Dunst
+1. alacritty
+2. dunst
 3. nvim
 4. qtile
 5. rofi
 6. spicetify
 7. tmux
+8. zsh
 
 Other goodies:
 1. obsidian custom skin
