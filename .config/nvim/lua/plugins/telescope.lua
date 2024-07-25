@@ -1,8 +1,51 @@
 return {
-    'nvim-telescope/telescope.nvim', tag = '0.1.8',      
-dependencies = { 'nvim-lua/plenary.nvim' },
-      config = function()
-	      local builtin = require("telescope.builtin")
-	      vim.keymap.set('n', '<C-f>', builtin.find_files, {})
-      end
+  {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.6',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    cmd = { "Telescope" },  -- Load when the `Telescope` command is used
+    config = function()
+      -- Setup Telescope with the specified commands
+      require('telescope').setup {
+        defaults = {
+          -- Display path without leading './'
+          path_display = function(_, path)
+            return path:gsub("^%./", "")
+          end,
+        }
+      }
+    end,
+    keys = {                -- Load on these key mappings
+      {
+        "<C-f>",
+        function()
+          require("telescope.builtin").find_files({
+            hidden = true,
+            find_command = {
+              "rg", "--files", "--hidden",
+              "--glob=!.git/**",
+              "--glob=!node_modules/**",
+              "--glob=!tmp/**"
+            }
+          })
+        end,
+        { noremap = true, silent = true }
+      },
+      {
+        "<leader>f",
+        function()
+          require("telescope.builtin").live_grep({
+            additional_args = function() return { "--hidden" } end,
+            vimgrep_arguments = {
+              "rg", "--color=never", "--no-heading", "--with-filename", "--line-number", "--column", "--smart-case",
+              "--glob=!.git/**",
+              "--glob=!node_modules/**",
+              "--glob=!tmp/**"
+            }
+          })
+        end,
+        { noremap = true, silent = true }
+      }
     }
+  }
+}
