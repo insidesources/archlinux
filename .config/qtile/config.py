@@ -21,7 +21,7 @@ mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
 myBrowser = "brave"     # My browser of choice
 myMenu = "rofi -show run" # Shows rofi
-myObsidian = "obsidian" # launches obsidian
+myObsidian = "obsidian" # Launches obsidian
 
 # Allows you to input a name when adding treetab section.
 @lazy.layout.function
@@ -167,12 +167,12 @@ keys = [
 
 ]
 groups = []
-group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9","0",]
+group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9","0"]
 
-group_labels = [" term", " web", " systems", " obsidian", " code", " games", " misc", " vm", " hacking", " admin",]
+group_labels = [" term", " web", " systems", " obsidian", " code", " hack", " admin", " games", " vm", " overflow"]
 #group_labels = ["1 - term", "2 - web", "3 - systems", "4 - obsidian", "5 - code", "6 - games", "7 - misc", "8 - hacking", "9 - admin",]
 
-group_layouts = ["monadtall", "max", "monadtall", "monadtall", "monadtall", "max", "monadtall", "monadtall", "monadtall", "monadtall",]
+group_layouts = ["monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "max", "monadtall", "monadtall"]
 
 
 for i in range(len(group_names)):
@@ -360,7 +360,7 @@ def init_widgets_list():
                  ),
         widget.Spacer(length = 4),
         widget.NvidiaSensors(
-                 format = 'gpu: {perf}',
+                format = 'gpu: {perf}',
                  foreground = colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e nvtop')},
                  decorations=[
@@ -388,7 +388,7 @@ def init_widgets_list():
         widget.DF(
                  update_interval = 60,
                  foreground = colors[1],
-                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e mc /')},
+                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e mc ~/')},
                  partition = '/',
                  #format = '[{p}] {uf}{m} ({r:.0f}%)',
                  format = '{uf}{m}',
@@ -434,7 +434,7 @@ def init_widgets_list():
         widget.Clock(
                  foreground = colors[1],
                  format = "%A, %B %d %Y %l:%M%p",
-                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e calcurse')},
+                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('proton-mail')},
                  decorations=[
                      BorderDecoration(
                          colour = colors[6],
@@ -445,7 +445,7 @@ def init_widgets_list():
         widget.Spacer(length = 4),
         widget.TextBox(
                 #widget22
-                text=" power",
+                text="power menu",
                 foreground = colors[6],
                 mouse_callbacks={'Button1': lambda: qtile.cmd_spawn('rofi -show power-menu -modi power-menu:rofi-power-menu')},
                 decorations=[
@@ -455,7 +455,7 @@ def init_widgets_list():
                      )
                  ],
                 ),
-        #widget.Spacer(length = 2),
+        widget.Spacer(length = 2),
         #widget.Systray(padding = 3),
         #widget.Spacer(length = 2),
         ]
@@ -500,8 +500,8 @@ def init_widgets_screen2():
 
 def init_screens():
     return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), background="#00000000", size=26)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen1(), background="#00000000", size=26)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen2(), background="#00000000", size=26))]
+            Screen(top=bar.Bar(widgets=init_widgets_screen2(), background="#00000000", size=26)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen1(), background="#00000000", size=26))]
 
 if __name__ in ["config", "__main__"]:
     screens = init_screens()
