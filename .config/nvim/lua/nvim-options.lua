@@ -1,3 +1,3 @@
-vim.cmd("colorscheme onedark")
-vim.opt.termguicolors = true
+vim.cmd("colorscheme default")
+vim.opt.termguicolors = false
 vim.cmd("set number")
