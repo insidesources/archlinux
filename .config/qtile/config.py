@@ -49,7 +49,7 @@ keys = [
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "shift"], "q", lazy.spawn("dm-logout"), desc="Logout menu"),
     #Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
-    Key([mod], "r", lazy.spawn("rofi -show run"), desc="spawn rofi to run an application"),
+    Key([mod], "r", lazy.spawn(myMenu), desc="spawn rofi to run an application"),
 
     # Switch between windows
     # Some layouts like 'monadtall' only need to use j/k to move
