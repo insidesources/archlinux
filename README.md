@@ -51,3 +51,5 @@ Other goodies:
 2. midnight commander custom skin
 
 Good luck and have fun! -insidesources
+
+Special thanks/credit for Derek Taylor (DT) https://gitlab.com/dwt1/dotfiles
