@@ -1,4 +1,4 @@
-#   ___ _____ ___ _     _____    ____             __ _       
+ 
 #  / _ \_   _|_ _| |   | ____|  / ___|___  _ __  / _(_) __ _ 
 # | | | || |  | || |   |  _|   | |   / _ \| '_ \| |_| |/ _` |
 # | |_| || |  | || |___| |___  | |__| (_) | | | |  _| | (_| |
@@ -323,7 +323,7 @@ def init_widgets_list():
                  display_format = '{updates} avail',
                  update_interval = 43200,
                  no_update_string = 'no updates',
-                 initial_text = 'checking...',
+                 initial_text = 'checking',
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e yay -Syu')},
                  foreground = colors[1],
                  decorations=[
@@ -348,7 +348,7 @@ def init_widgets_list():
                  ),
         widget.Spacer(length = 4),
         widget.CPU(
-                 format = 'cpu: {load_percent}%',
+                 format = 'cpu:{load_percent}%',
                  foreground = colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e glances --fahrenheit')},
                  decorations=[
@@ -360,7 +360,7 @@ def init_widgets_list():
                  ),
         widget.Spacer(length = 4),
         widget.NvidiaSensors(
-                format = 'gpu: {perf}',
+                format = 'gpu:{perf}',
                  foreground = colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e nvtop')},
                  decorations=[
@@ -375,8 +375,9 @@ def init_widgets_list():
                  #widget12
                  foreground = colors[6],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e glances --fahrenheit')},
-                 format = '{MemUsed: .0f}{mm}',
+                 format = '{MemUsed:.0f}{mm}',
                  fmt = 'memory:{}',
+                 measure_mem='G',
                  decorations=[
                      BorderDecoration(
                          colour = colors[12],
@@ -392,7 +393,7 @@ def init_widgets_list():
                  partition = '/',
                  #format = '[{p}] {uf}{m} ({r:.0f}%)',
                  format = '{uf}{m}',
-                 fmt = 'root: {}',
+                 fmt = 'root:{}',
                  visible_on_warn = False,
                  decorations=[
                      BorderDecoration(
@@ -409,7 +410,7 @@ def init_widgets_list():
                  partition = '/secondary',
                  #format = '[{p}] {uf}{m} ({r:.0f}%)',
                  format = '{uf}{m}',
-                 fmt = 'secondary: {}',
+                 fmt = 'secondary:{}',
                  visible_on_warn = False,
                  decorations=[
                      BorderDecoration(
@@ -421,7 +422,7 @@ def init_widgets_list():
         widget.Spacer(length = 4),        
         widget.Volume(
                  foreground = colors[6],
-                 fmt = 'vol: {}',
+                 fmt = 'vol:{}',
                  decorations=[
                      BorderDecoration(
                          colour = colors[7],
