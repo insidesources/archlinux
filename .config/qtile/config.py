@@ -276,7 +276,7 @@ layouts = [
 # from having to type these out for each individual widget.
 widget_defaults = dict(
     font="source code pro",
-    fontsize = 12,
+    fontsize = 11,
     padding = 0,
     background=colors[14]
 )
@@ -499,9 +499,9 @@ def init_widgets_screen2():
 # For ex: Screen(top=bar.Bar(widgets=init_widgets_screen2(), background="#00000000", size=24)),
 
 def init_screens():
-    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), background="#00000000", size=26)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen2(), background="#00000000", size=26)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen1(), background="#00000000", size=26))]
+    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), background="#00000000", size=25)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen2(), background="#00000000", size=25)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen1(), background="#00000000", size=25))]
 
 if __name__ in ["config", "__main__"]:
     screens = init_screens()
