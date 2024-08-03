@@ -8,12 +8,6 @@ Kernel: Linux Zen
 
 Shell: zsh
 
-Display (XG32AQ): 2560x1440 @ 144 Hz in 32″
-
-Display (ASUS PG329): 2560x1440 @ 144 Hz in 32″
-
-Display (ROG PG278QR): 2560x1440 @ 144 Hz in 27″
-
 WM: Qtile (X11)
 
 Theme: KvArcDark# [Qt], Arc-Dark [GTK2/3]
@@ -24,7 +18,7 @@ Font: Source Code Pro (9pt) [Qt], Source Code Pro (11pt) [GTK2/3]
 
 Cursor: Bibata-Original-Ice
 
-Terminal: Alacritty & tmux 3.4
+Terminal: Alacritty & tmux
 
 CPU: Intel(R) Core(TM) i9-9900K (16) @ 5.00 GHz
 
