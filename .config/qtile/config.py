@@ -337,7 +337,7 @@ def init_widgets_list():
         widget.GenPollText(
                  update_interval = 300,
                  func = lambda: subprocess.check_output("printf $(uname -r)", shell=True, text=True),
-                 foreground = colors[3],
+                 foreground = colors[1],
                  fmt = '{}',
                  decorations=[
                      BorderDecoration(
@@ -349,7 +349,7 @@ def init_widgets_list():
         widget.Spacer(length = 4),
         widget.CPU(
                  format = 'cpu:{load_percent}%',
-                 foreground = colors[9],
+                 foreground = colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e glances --fahrenheit')},
                  decorations=[
                      BorderDecoration(
@@ -361,7 +361,7 @@ def init_widgets_list():
         widget.Spacer(length = 4),
         widget.NvidiaSensors(
                 format = 'gpu:{perf}',
-                 foreground = colors[9],
+                 foreground = colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e nvtop')},
                  decorations=[
                      BorderDecoration(
@@ -373,7 +373,7 @@ def init_widgets_list():
         widget.Spacer(length = 4),
         widget.Memory(
                  #widget12
-                 foreground = colors[12],
+                 foreground = colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e glances --fahrenheit')},
                  format = '{MemUsed:.0f}{mm}',
                  fmt = 'memory:{}',
@@ -388,7 +388,7 @@ def init_widgets_list():
         widget.Spacer(length = 4),
         widget.DF(
                  update_interval = 60,
-                 foreground = colors[11],
+                 foreground = colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e mc ~/')},
                  partition = '/',
                  #format = '[{p}] {uf}{m} ({r:.0f}%)',
@@ -405,7 +405,7 @@ def init_widgets_list():
         widget.Spacer(length = 4),
                 widget.DF(
                  update_interval = 60,
-                 foreground = colors[11],
+                 foreground = colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e mc /secondary')},
                  partition = '/secondary',
                  #format = '[{p}] {uf}{m} ({r:.0f}%)',
@@ -421,7 +421,7 @@ def init_widgets_list():
                  ),
         widget.Spacer(length = 4),        
         widget.Volume(
-                 foreground = colors[7],
+                 foreground = colors[1],
                  fmt = 'vol:{}',
                  decorations=[
                      BorderDecoration(
@@ -433,7 +433,7 @@ def init_widgets_list():
                  ),
         widget.Spacer(length = 4),
         widget.Clock(
-                 foreground = colors[6],
+                 foreground = colors[1],
                  format = "%A, %B %d %Y %l:%M%p",
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('proton-mail')},
                  decorations=[
@@ -447,7 +447,7 @@ def init_widgets_list():
         widget.TextBox(
                 #widget22
                 text="power menu",
-                foreground = colors[13],
+                foreground = colors[1],
                 mouse_callbacks={'Button1': lambda: qtile.cmd_spawn('rofi -show power-menu -modi power-menu:rofi-power-menu')},
                 decorations=[
                      BorderDecoration(
