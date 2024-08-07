@@ -377,7 +377,7 @@ def init_widgets_list():
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e glances --fahrenheit')},
                  format = '{MemUsed:.0f}{mm}',
                  fmt = 'memory:{}',
-                 measure_mem='G',
+                 measure_mem='M',
                  decorations=[
                      BorderDecoration(
                          colour = colors[12],
@@ -403,7 +403,7 @@ def init_widgets_list():
                  ],
                  ),
         widget.Spacer(length = 4),
-                widget.DF(
+        widget.DF(
                  update_interval = 60,
                  foreground = colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e mc /secondary')},
@@ -419,6 +419,20 @@ def init_widgets_list():
                      )
                  ],
                  ),
+        widget.Spacer(length = 4),
+        widget.Net(
+                format='↓{down:.0f}{down_suffix} ↑{up:.0f}{up_suffix}',
+                fmt = 'eth:{}',
+                interface = 'eno2',
+                use_bits = True,
+                #mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e ')},
+                decorations=[
+                     BorderDecoration(
+                         colour = colors[9],
+                         border_width = [0, 0, 2, 0],
+                     )
+                 ],
+                ),
         widget.Spacer(length = 4),        
         widget.Volume(
                  foreground = colors[1],
