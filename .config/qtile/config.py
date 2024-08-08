@@ -312,12 +312,22 @@ def init_widgets_list():
                  other_current_screen_border = colors[10],
                  other_screen_border = colors[10],
                  ),
-        widget.Spacer(length = bar.STRETCH),
-        widget.WindowName(
+        widget.Spacer(length = 20),
+        widget.WindowTabs(
+                 separator = ' ',
                  foreground = colors[1],
-                 fontsize = 11,
-                 max_chars = 50,
+                 scroll_fixed_width = False,
+                 scroll = True,
+                 #max_chars = 100,
+                 width = 700,
+                 decorations=[
+                     BorderDecoration(
+                         colour = colors[16],
+                         border_width = [0, 0, 2, 0], #top right bottom left 
+                     )
+                 ],
                  ),
+        widget.Spacer(length = bar.STRETCH),
         widget.CheckUpdates(
                  distro = 'Arch_yay',
                  display_format = '{updates} avail',
@@ -329,7 +339,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour = colors[15],
-                         border_width = [0, 0, 2, 0],
+                         border_width = [0, 0, 2, 0], #top right bottom left 
                      )
                  ],
                  ),
