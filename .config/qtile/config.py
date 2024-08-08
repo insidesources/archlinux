@@ -435,7 +435,7 @@ def init_widgets_list():
                 fmt = 'eth:{}',
                 interface = 'eno2',
                 use_bits = True,
-                #mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e ')},
+                mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myBrowser + ' https://www.whatsmyip.org')},
                 decorations=[
                      BorderDecoration(
                          colour = colors[9],
