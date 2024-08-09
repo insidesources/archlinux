@@ -6,7 +6,7 @@ Nord = [
     ["#272b35", "#272b35"], # bg
     ["#D8DEE9", "#D8DEE9"], # fg
     ["#3B4252", "#3B4252"], # color02 dark gray
-    ["#DC143C", "#DC143c"], # color03 red
+    ["#b22222", "#b22222"], # color03 red
     ["#A3BE8C", "#A3BE8C"], # color04 goldish
     ["#EBCB8B", "#EBCB8B"], # color05 yellowish
     ["#81A1C1", "#81A1C1"], # color06 medium slate blue
@@ -38,6 +38,6 @@ Everforest = [
     ["#e69875", "#e69875"], # color12 dark orange
     ["#dbbc7f", "#dbbc7f"], # color13 yellow
     ["#282c34ee", "#282c34dd"], # color14 - transparent
-    ["#0097A7", "#0097A7"], # color 15 - cyan
+    ["#0097A7", "#0097A7"], # color 15 -#1e2326 cyan
     ["#206694", "#206694"] # color 16 - dark slate blue 
     ]
