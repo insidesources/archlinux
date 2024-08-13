@@ -44,7 +44,7 @@ keys = [
     Key([mod, "shift"], "Return", lazy.spawn("dm-run"), desc='Run Launcher'),
     Key([mod], "b", lazy.spawn(myBrowser), desc='Web browser'),
     Key([mod], "o", lazy.spawn(myObsidian), desc='Obsidian'),
-    Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
+    Key([mod], "l", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "c", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "shift"], "q", lazy.spawn("dm-logout"), desc="Logout menu"),
@@ -59,7 +59,7 @@ keys = [
     Key([mod], "Right", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "Down", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "Up", lazy.layout.up(), desc="Move focus up"),
-    Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
+    Key([mod], "tab", lazy.layout.next(), desc="Move window focus to other window"),
 
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
@@ -311,6 +311,7 @@ def init_widgets_list():
                  this_screen_border = colors [10],
                  other_current_screen_border = colors[10],
                  other_screen_border = colors[10],
+                 hide_unused = True,
                  ),
         widget.Spacer(length = 20),
         widget.WindowTabs(
@@ -328,6 +329,21 @@ def init_widgets_list():
                  ],
                  ),
         widget.Spacer(length = bar.STRETCH),
+        widget.Net(
+                format='↓{down:.0f}{down_suffix} ↑{up:.0f}{up_suffix}',
+                fmt = 'eth:{}',
+                # width = 120,
+                interface = 'eno2',
+                use_bits = True,
+                mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myBrowser + ' https://www.whatsmyip.org')},
+                decorations=[
+                     BorderDecoration(
+                         colour = colors[9],
+                         border_width = [0, 0, 2, 0],
+                     )
+                 ],
+                ),
+        widget.Spacer(length = 4),
         widget.CheckUpdates(
                  distro = 'Arch_yay',
                  display_format = '{updates} avail',
@@ -415,34 +431,20 @@ def init_widgets_list():
         widget.Spacer(length = 4),
         widget.DF(
                  update_interval = 60,
-                 foreground = colors[1],
+                 foreground=colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e mc /secondary')},
-                 partition = '/secondary',
-                 #format = '[{p}] {uf}{m} ({r:.0f}%)',
-                 format = '{uf}{m}',
-                 fmt = 'secondary:{}',
-                 visible_on_warn = False,
+                 partition='/secondary',
+                 # format='[{p}] {uf}{m} ({r:.0f}%)',
+                 format='{uf}{m}',
+                 fmt='secondary:{}',
+                 visible_on_warn=False,
                  decorations=[
                      BorderDecoration(
-                         colour = colors[11],
-                         border_width = [0, 0, 2, 0],
+                         colour=colors[11],
+                         border_width=[0, 0, 2, 0],
                      )
                  ],
                  ),
-        widget.Spacer(length = 4),
-        widget.Net(
-                format='↓{down:.0f}{down_suffix} ↑{up:.0f}{up_suffix}',
-                fmt = 'eth:{}',
-                interface = 'eno2',
-                use_bits = True,
-                mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myBrowser + ' https://www.whatsmyip.org')},
-                decorations=[
-                     BorderDecoration(
-                         colour = colors[9],
-                         border_width = [0, 0, 2, 0],
-                     )
-                 ],
-                ),
         widget.Spacer(length = 4),        
         widget.Volume(
                  foreground = colors[1],
