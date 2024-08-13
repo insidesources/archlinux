@@ -169,7 +169,7 @@ keys = [
 groups = []
 group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9","0"]
 
-group_labels = [" term", " web", " systems", " obsidian", " code", " hack", " admin", " games", " vm", " overflow"]
+group_labels = [" term", " web", " systems", " obsidian", " code", " hack", " admin", " games", " chat", " overflow"]
 #group_labels = ["1 - term", "2 - web", "3 - systems", "4 - obsidian", "5 - code", "6 - games", "7 - misc", "8 - hacking", "9 - admin",]
 
 group_layouts = ["monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "max", "monadtall", "monadtall"]
@@ -527,8 +527,8 @@ def init_widgets_screen2():
 
 def init_screens():
     return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), background="#00000000", size=25)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen2(), background="#00000000", size=25)),
             Screen(top=bar.Bar(widgets=init_widgets_screen1(), background="#00000000", size=25))]
+            #Screen(top=bar.Bar(widgets=init_widgets_screen1(), background="#00000000", size=25))]
 
 if __name__ in ["config", "__main__"]:
     screens = init_screens()
