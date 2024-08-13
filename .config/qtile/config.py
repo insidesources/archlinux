@@ -351,7 +351,7 @@ def init_widgets_list():
                  no_update_string = 'no updates',
                  initial_text = 'checking',
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e yay -Syu')},
-                 foreground = colors[15],
+                 foreground = colors[1],
                  decorations=[
                      BorderDecoration(
                          colour = colors[15],
