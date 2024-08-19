@@ -324,7 +324,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour = colors[16],
-                         border_width = [0, 0, 2, 0], #top right bottom left 
+                         border_width = [0, 0, 3, 0], #top right bottom left 
                      )
                  ],
                  ),
@@ -339,7 +339,7 @@ def init_widgets_list():
                 decorations=[
                      BorderDecoration(
                          colour = colors[9],
-                         border_width = [0, 0, 2, 0],
+                         border_width = [0, 0, 3, 0],
                      )
                  ],
                 ),
@@ -355,7 +355,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour = colors[15],
-                         border_width = [0, 0, 2, 0], #top right bottom left 
+                         border_width = [0, 0, 3, 0], #top right bottom left 
                      )
                  ],
                  ),
@@ -368,7 +368,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour = colors[3],
-                         border_width = [0, 0, 2, 0],
+                         border_width = [0, 0, 3, 0],
                      )
                  ],
                  ),
@@ -380,7 +380,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour = colors[9],
-                         border_width = [0, 0, 2, 0],
+                         border_width = [0, 0, 3, 0],
                      )
                  ],
                  ),
@@ -392,7 +392,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour = colors[9],
-                         border_width = [0, 0, 2, 0],
+                         border_width = [0, 0, 3, 0],
                      )
                  ],
                  ),
@@ -407,7 +407,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour = colors[12],
-                         border_width = [0, 0, 2, 0],
+                         border_width = [0, 0, 3, 0],
                      )
                  ],
                  ),
@@ -424,7 +424,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour = colors[11],
-                         border_width = [0, 0, 2, 0],
+                         border_width = [0, 0, 3, 0],
                      )
                  ],
                  ),
@@ -441,7 +441,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour=colors[11],
-                         border_width=[0, 0, 2, 0],
+                         border_width=[0, 0, 3, 0],
                      )
                  ],
                  ),
@@ -452,7 +452,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour = colors[7],
-                         border_width = [0, 0, 2, 0],
+                         border_width = [0, 0, 3, 0],
                      )
                  ],
                   volume_app = 'pavucontrol',
@@ -465,7 +465,7 @@ def init_widgets_list():
                  decorations=[
                      BorderDecoration(
                          colour = colors[6],
-                         border_width = [0, 0, 2, 0],
+                         border_width = [0, 0, 3, 0],
                      )
                  ],
                  ),
@@ -478,7 +478,7 @@ def init_widgets_list():
                 decorations=[
                      BorderDecoration(
                          colour = colors[13],
-                         border_width = [0, 0, 2, 0],
+                         border_width = [0, 0, 3, 0],
                      )
                  ],
                 ),
