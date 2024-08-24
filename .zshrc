@@ -91,8 +91,8 @@ export LANG=en_US.UTF-8
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-export QT_QPA_PLATFORMTHEME="qt5ct"
-export QT_STYLE_OVERRIDE="gtk3"
+export QT_QPA_PLATFORMTHEME="qt6ct"
+#export QT_STYLE_OVERRIDE="gtk3"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -110,3 +110,8 @@ alias search="yay -Ss"
 alias pc="proxychains"
 alias scr="cd ~/pictures && scrot -s -f -d 3 --format png"
 alias nv="nvim"
+alias zed="zeditor"
+alias ff="fastfetch"
+
+# Created by `pipx` on 2024-08-17 22:37:38
+export PATH="$PATH:/home/hacker/.local/bin"
