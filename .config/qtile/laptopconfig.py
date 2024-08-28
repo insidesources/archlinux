@@ -349,6 +349,7 @@ def init_widgets_list():
                  format = '{essid}',
                  fmt = 'wlan: {}',
                  #visible_on_warn = False,
+                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e nmcli dev wifi list')},
                  decorations=[
                      BorderDecoration(
                          colour = colors[11],
@@ -387,7 +388,7 @@ def init_widgets_list():
                  ),
         widget.Spacer(length = 4),
         widget.Battery(
-                 format = 'bat: {char}{percent:1.0%}',
+                format = 'bat: {hour:d}:{min:02d} {char}{percent:1.0%}',
                  foreground = colors[1],
                  charge_char = '↑',
                  discharge_char = '↓',
