@@ -387,7 +387,7 @@ def init_widgets_list():
                  distro = 'Arch_yay',
                  display_format = '{updates} avail',
                  update_interval = 43200,
-                 no_update_string = 'no updates',
+                 no_update_string = '0 avail',
                  initial_text = 'checking',
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e yay -Syu')},
                  foreground = colors[1],
