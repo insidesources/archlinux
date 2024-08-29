@@ -19,7 +19,7 @@ import colors
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
-myBrowser = "brave"     # My browser of choice
+myBrowser = "zen-browser"     # My browser of choice
 myMenu = "rofi -show run" # Shows rofi
 myObsidian = "obsidian" # Launches obsidian
 
@@ -320,7 +320,7 @@ def init_widgets_list():
                  scroll_fixed_width = False,
                  scroll = True,
                  #max_chars = 100,
-                 width = 700,
+                 width = 500,
                  decorations=[
                      BorderDecoration(
                          colour = colors[16],
@@ -331,7 +331,7 @@ def init_widgets_list():
         widget.Spacer(length = bar.STRETCH),
         widget.Net(
                 format='↓{down:.0f}{down_suffix} ↑{up:.0f}{up_suffix}',
-                fmt = 'eth:{}',
+                fmt = '{}',
                 # width = 120,
                 interface = 'wlan0',
                 use_bits = True,
@@ -347,7 +347,7 @@ def init_widgets_list():
         widget.Wlan(
                  foreground = colors[1],
                  format = '{essid}',
-                 fmt = 'wlan: {}',
+                 fmt = '{}',
                  #visible_on_warn = False,
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e nmcli dev wifi list')},
                  decorations=[
@@ -358,6 +358,31 @@ def init_widgets_list():
                  ],
                  ),
         widget.Spacer(length = 4),        
+        widget.Battery(
+                format = '{hour:d}:{min:02d} {char}{percent:1.0%}',
+                 foreground = colors[1],
+                 charge_char = '↑',
+                 discharge_char = '↓',
+                 decorations=[
+                     BorderDecoration(
+                         colour = colors[9],
+                         border_width = [0, 0, 3, 0],
+                     )
+                 ],
+                 ),
+        widget.Spacer(length = 4),
+        widget.Volume(
+                 foreground = colors[1],
+                 fmt = 'vol:{}',
+                 decorations=[
+                     BorderDecoration(
+                         colour = colors[7],
+                         border_width = [0, 0, 3, 0],
+                     )
+                 ],
+                  volume_app = 'pavucontrol',
+                 ),
+        widget.Spacer(length = 4),
         widget.CheckUpdates(
                  distro = 'Arch_yay',
                  display_format = '{updates} avail',
@@ -387,19 +412,7 @@ def init_widgets_list():
                  ],
                  ),
         widget.Spacer(length = 4),
-        widget.Battery(
-                format = 'bat: {hour:d}:{min:02d} {char}{percent:1.0%}',
-                 foreground = colors[1],
-                 charge_char = '↑',
-                 discharge_char = '↓',
-                 decorations=[
-                     BorderDecoration(
-                         colour = colors[9],
-                         border_width = [0, 0, 3, 0],
-                     )
-                 ],
-                 ),
-        widget.Spacer(length = 4), 
+         
         widget.CPU(
                  format = 'cpu:{load_percent}%',
                  foreground = colors[1],
@@ -417,7 +430,7 @@ def init_widgets_list():
                  foreground = colors[1],
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e glances --fahrenheit')},
                  format = '{MemUsed:.0f}{mm}',
-                 fmt = 'memory:{}',
+                 fmt = 'ram:{}',
                  measure_mem='M',
                  decorations=[
                      BorderDecoration(
@@ -434,7 +447,7 @@ def init_widgets_list():
                  partition = '/',
                  #format = '[{p}] {uf}{m} ({r:.0f}%)',
                  format = '{uf}{m}',
-                 fmt = 'root:{}',
+                 fmt = '/:{}',
                  visible_on_warn = False,
                  decorations=[
                      BorderDecoration(
@@ -444,21 +457,10 @@ def init_widgets_list():
                  ],
                  ),
         widget.Spacer(length = 4),        
-        widget.Volume(
-                 foreground = colors[1],
-                 fmt = 'vol:{}',
-                 decorations=[
-                     BorderDecoration(
-                         colour = colors[7],
-                         border_width = [0, 0, 3, 0],
-                     )
-                 ],
-                  volume_app = 'pavucontrol',
-                 ),
-        widget.Spacer(length = 4),
+        
         widget.Clock(
                  foreground = colors[1],
-                 format = "%A, %B %d %Y %l:%M%p",
+                 format = "%A, %B %d %Y%l:%M%p",
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('proton-mail')},
                  decorations=[
                      BorderDecoration(
