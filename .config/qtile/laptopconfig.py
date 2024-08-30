@@ -460,7 +460,7 @@ def init_widgets_list():
         
         widget.Clock(
                  foreground = colors[1],
-                 format = "%A, %B %d %Y%l:%M%p",
+                 format = "%A, %B %d %Y %l:%M%p",
                  mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('proton-mail')},
                  decorations=[
                      BorderDecoration(
